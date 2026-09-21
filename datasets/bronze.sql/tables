@@ -1,3 +1,5 @@
+--we have to run truncate TAble bronze.loc_a01; for getting new dat every day it will delet dat from existing databases and get new dat everytime wew run it.
+
 CREATE TABLE Bronze.bronze.cust_info (
     cst_id INT DEFAULT NULL,
     cst_key VARCHAR(50) DEFAULT NULL,
