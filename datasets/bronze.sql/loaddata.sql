@@ -1,3 +1,41 @@
+DROP PROCEDURE IF EXISTS bronze.load_bronze;
+
+DELIMITER $$
+
+CREATE PROCEDURE bronze.load_bronze()
+BEGIN
+
+    -- =========================================
+    -- CRM TABLES
+    -- =========================================
+
+    TRUNCATE TABLE bronze.cust_info;
+
+    TRUNCATE TABLE bronze.prd_info;
+
+    TRUNCATE TABLE bronze.sales_details;
+
+    TRUNCATE TABLE bronze.loc_a101;
+
+
+    -- =========================================
+    -- ERP TABLES
+    -- =========================================
+
+    TRUNCATE TABLE bronze.cust_az12;
+
+    TRUNCATE TABLE bronze.px_cat_g1v2;
+
+
+    -- =========================================
+    -- DATA LOADING
+    -- =========================================
+    -- Add your INSERT / loading statements here.
+
+
+END $$
+
+DELIMITER ;
 -- i had use this load the data into data base through the terminal bash in mac
 ## Data Loading Error & Troubleshooting
 
